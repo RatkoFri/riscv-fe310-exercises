@@ -18,7 +18,7 @@ task and the steps to follow.
 | #  | Folder                | What you do                                                        |
 | -- | --------------------- | ----------------------------------------------------------------- |
 | 1  | `01-led-blink/`       | Blink the on-board RGB LED through the GPIO registers.            |
-| 2  | `02-uart-print/`      | Send `Hello, FE310!` to a PC over the UART.                       |
+| 2  | `02-uart-print/`      | Send strings to a PC over the UART.                       |
 | 3  | `03-timer-interrupt/` | Use the machine-timer interrupt to blink the LED in the background. |
 
 ## Prerequisites
@@ -32,15 +32,16 @@ task and the steps to follow.
 
 ## How to use this repository
 
-```
-.
+```text
+
 ├── README.md
+│ 
 ├── 01-led-blink/
-│   └── README.md
+│  
 ├── 02-uart-print/
-│   └── README.md
+│   
 └── 03-timer-interrupt/
-    └── README.md
+    
 ```
 
 1. Open the exercise folder and read its `README.md`.
