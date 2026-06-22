@@ -62,8 +62,8 @@ Create and configure the project as described in
 [*Setting up Freedom Studio*](https://bulicp.github.io/riscv-fe310-book/freedom-studio.html),
 then import the necessary HAL library files into your project:
 
-- `hal_gpio.h`
-- `hal_gpio.c`
+- GPIO driver: `hal_gpio.h`, `hal_gpio.c`
+- starter code: `main.c`
 
 
 ### Step 1 — Describe the pin configuration
@@ -233,3 +233,8 @@ int main() {
 </details>
 
 ---
+
+## What's next
+ 
+With the LED under control, move on to **Exercise 2 — UART print**, where you send
+messages denoting which LED is on to a serial terminal on your PC.
