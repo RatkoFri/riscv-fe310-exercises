@@ -20,6 +20,8 @@ task and the steps to follow.
 | 1  | `01-led-blink/`       | Blink the on-board RGB LED through the GPIO registers.            |
 | 2  | `02-uart-print/`      | Send strings to a PC over the UART.                       |
 | 3  | `03-timer-interrupt/` | Use the machine-timer interrupt to blink the LED in the background. |
+| 4  | `misc` | Miscellaneous examples and utilities |
+
 
 ## Prerequisites
 
