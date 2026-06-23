@@ -35,13 +35,13 @@
 
 typedef struct
 {
-	volatile int UART_TXDATA;
-	volatile int UART_RXDATA;
-	volatile int UART_TXCTRL;
-	volatile int UART_RXCTRL;
-	volatile int UART_IE;
-	volatile int UART_IP;
-	volatile int UART_DIV;
+	volatile int UART_TXDATA; //0x0
+	volatile int UART_RXDATA; //0x4
+	volatile int UART_TXCTRL; //0x8
+	volatile int UART_RXCTRL; //0xc
+	volatile int UART_IE; //0x10
+	volatile int UART_IP; //0x14
+	volatile int UART_DIV; //0x18
 }UART_TypeDef;
 
 typedef struct
