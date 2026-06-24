@@ -15,6 +15,14 @@ into interrupt-driven firmware.
 > and [§3.5 *Vector table and handlers*](https://bulicp.github.io/riscv-fe310-book/interrupts/vector-table.html)
 > before you start.
 
+> [!NOTE]
+> **The HiFive1 Rev B boots in Machine mode.** The FE310-G002 (E31 hart) resets
+> directly into Machine (M) mode — the most privileged level — so all the code in
+> this exercise already runs privileged. You don't need to "enter" or enable
+> M-mode: the `mtvec`, `mstatus`, `mie`, and `mcause` registers used here are all
+> machine-mode CSRs, and the timer interrupt traps into an M-mode handler. (The
+> FE310 implements only M and U modes — there is no Supervisor mode.)
+
 ---
 
 ## What you'll practise
