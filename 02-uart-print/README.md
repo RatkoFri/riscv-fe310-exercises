@@ -193,6 +193,9 @@ void primitivedelay(unsigned int delay){
     }
 }
 
+GPIO_TypeDef *GPIO = GPIO_BASE_ADDRESS;
+
+
 int main() {
 
     // --- GPIO setup (from Exercise 1) ---
@@ -200,7 +203,6 @@ int main() {
     cfg_gpio.Mode = GPIO_MODE_OUTPUT;
     cfg_gpio.Pin  = LED_RED_PIN | LED_GREEN_PIN | LED_BLUE_PIN;
 
-    GPIO_TypeDef *GPIO = GPIO_BASE_ADDRESS;
     HAL_GPIO_Init(GPIO, &cfg_gpio);
 
     // --- UART setup ---
